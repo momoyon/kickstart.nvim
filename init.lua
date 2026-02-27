@@ -247,21 +247,11 @@ rtp:prepend(lazypath)
 --
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
-  {
-    'RedsXDD/neopywal.nvim',
-    name = 'neopywal',
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-
   'Apeiros-46B/qalc.nvim',
 
   'andweeb/presence.nvim',
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
-
-  { 'norcalli/nvim-colorizer.lua' },
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
@@ -1051,7 +1041,6 @@ require('presence').setup {
   workspace_text = 'Working on %s', -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
   line_number_text = 'Line %s out of %s', -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
 }
-require('colorizer').setup()
 
 -- local lspconfig = require 'lspconfig'
 
