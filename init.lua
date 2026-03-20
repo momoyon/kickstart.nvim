@@ -249,6 +249,7 @@ rtp:prepend(lazypath)
 require('lazy').setup({
   'Apeiros-46B/qalc.nvim',
 
+  'norcalli/nvim-colorizer.lua',
   'andweeb/presence.nvim',
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
@@ -1016,6 +1017,8 @@ require('lazy').setup({
     },
   },
 })
+
+require 'colorizer'.setup()
 
 -- The setup config table shows all available config options with their default values:
 require('presence').setup {
